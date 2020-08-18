@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 var indexRouter = require('./routes/index');
 var phonebookRouter = require('./routes/phonebooks');
 
-mongoose.connect('mongodb://localhost/cmsdb', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/cmsdb', {useNewUrlParser: true, useUnifiedTopology: true});
 
 var app = express();
 
